@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #8d6e63; /* Warm Brown */
+  --color-primary-light: #d7ccc8; /* Nude / Light Brown */
+  --color-primary-dark: #5d4037; /* Deep Espresso */
+  --color-accent: #bcaaa4; /* Muted Nude */
+  --color-bg-soft: #faf9f6; /* Creamy White */
+  
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-serif: 'Outfit', serif;
+}
+
+@layer base {
+  body {
+    @apply bg-bg-soft text-primary-dark antialiased;
+    font-family: var(--font-sans);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+    @apply font-semibold;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-6 py-3 bg-primary text-white rounded-full font-medium transition-all duration-300 hover:bg-primary-dark hover:shadow-lg active:scale-95;
+  }
+  
+  .btn-outline {
+    @apply px-6 py-3 border-2 border-primary text-primary rounded-full font-medium transition-all duration-300 hover:bg-primary hover:text-white active:scale-95;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-3 bg-white border border-primary-light rounded-xl focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all;
+  }
+
+  .card {
+    @apply bg-white p-6 rounded-2xl shadow-sm border border-primary-light/30 transition-all hover:shadow-md;
+  }
+}
+
+/* Glassmorphism utility */
+.glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
