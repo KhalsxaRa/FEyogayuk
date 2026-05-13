@@ -36,7 +36,7 @@ Platform aplikasi web untuk pemesanan kelas Yoga dan manajemen kesehatan mental.
 2. Jalankan `npm install` untuk menginstal dependensi.
 3. Buat file `.env` di root folder:
    ```env
-   VITE_API_URL=http://localhost:3000/api
+   VITE_API_URL=http://localhost:5137/api
    ```
 4. Jalankan perintah `npm run dev` untuk memulai server pengembangan.
 
@@ -61,7 +61,7 @@ Platform aplikasi web untuk pemesanan kelas Yoga dan manajemen kesehatan mental.
 2. Run `npm install` to install dependencies.
 3. Create a `.env` file in the root folder:
    ```env
-   VITE_API_URL=http://localhost:3000/api
+   VITE_API_URL=http://localhost:5137/api
    ```
 4. Run `npm run dev` to start the development server.
 
