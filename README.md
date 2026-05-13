@@ -1,5 +1,6 @@
 # YogaYuk - Yoga & Mindfulness Platform
 
+![node](https://img.shields.io/npm/v/npm.svg?logo=nodedotjs)
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
 ![Redux](https://img.shields.io/badge/redux-%23764abc.svg?style=for-the-badge&logo=redux&logoColor=white)
