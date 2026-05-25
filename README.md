@@ -1,5 +1,6 @@
 # YogaYuk - Yoga & Mindfulness Platform
 
+![node](https://img.shields.io/npm/v/npm.svg?logo=nodedotjs)
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
 ![Redux](https://img.shields.io/badge/redux-%23764abc.svg?style=for-the-badge&logo=redux&logoColor=white)
@@ -36,7 +37,7 @@ Platform aplikasi web untuk pemesanan kelas Yoga dan manajemen kesehatan mental.
 2. Jalankan `npm install` untuk menginstal dependensi.
 3. Buat file `.env` di root folder:
    ```env
-   VITE_API_URL=http://localhost:3000/api
+   VITE_API_URL=http://localhost:5137/api
    ```
 4. Jalankan perintah `npm run dev` untuk memulai server pengembangan.
 
@@ -61,7 +62,7 @@ Platform aplikasi web untuk pemesanan kelas Yoga dan manajemen kesehatan mental.
 2. Run `npm install` to install dependencies.
 3. Create a `.env` file in the root folder:
    ```env
-   VITE_API_URL=http://localhost:3000/api
+   VITE_API_URL=http://localhost:5137/api
    ```
 4. Run `npm run dev` to start the development server.
 
