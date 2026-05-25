@@ -7,10 +7,10 @@ import { Menu, X, User, LogOut, Heart, Loader2 } from 'lucide-react';
 
 // Lazy loaded Pages
 const Home = lazy(() => import('./pages/Home'));
-const Classes = lazy(() => import('./pages/classes'));
-const About = lazy(() => import('./pages/About'));
-const Login = lazy(() => import('./pages/Auth/Login'));
-const Signup = lazy(() => import('./pages/Auth/Signup'));
+const Classes = lazy(() => import('./pages/Classes'));
+const About = lazy(() => import('./pages/about'));
+const Login = lazy(() => import('./pages/Auth/login'));
+const Signup = lazy(() => import('./pages/Auth/signup'));
 const Profile = lazy(() => import('./pages/Profile'));
 
 const LoadingScreen = () => (
@@ -29,11 +29,11 @@ const Navbar = () => {
 
   const handleLogout = () => {
     dispatch(logout());
-    navigate('/landingPage');
+    navigate('/');
   };
 
   const navLinks = [
-    { name: 'Home', path: '/landingPage' },
+    { name: 'Home', path: '/' },
     { name: 'Classes', path: '/classes' },
     { name: 'About', path: '/about' },
   ];
@@ -43,7 +43,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-20 items-center">
           <div className="flex items-center">
-            <Link to="/landingPage" className="flex items-center gap-2 group">
+            <Link to="/" className="flex items-center gap-2 group">
               <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white group-hover:rotate-12 transition-transform">
                 <Heart size={20} />
               </div>
@@ -171,7 +171,7 @@ function App() {
   return (
     <Suspense fallback={<Layout><LoadingScreen /></Layout>}>
       <Routes>
-        <Route path="/landingPage" element={<Layout><Home /></Layout>} />
+        <Route path="/" element={<Layout><Home /></Layout>} />
         <Route path="/classes" element={<Layout><Classes /></Layout>} />
         <Route path="/about" element={<Layout><About /></Layout>} />
         <Route path="/login" element={<Layout><Login /></Layout>} />

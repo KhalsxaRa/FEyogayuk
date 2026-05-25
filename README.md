@@ -14,7 +14,7 @@ Platform aplikasi web untuk pemesanan kelas Yoga dan manajemen kesehatan mental.
 ## 🇮🇩 Bahasa Indonesia
 
 ### Rute utama proyek terdiri dari 6 bagian:
-1. **Home**: `(/landingPage)` - Halaman utama aplikasi.
+1. **Home**: `(/)` - Halaman utama aplikasi.
 2. **Classes**: `(/classes)` - Daftar kelas yoga yang tersedia.
 3. **About**: `(/about)` - Informasi tentang YogaYuk.
 4. **Login**: `(/login)` - Masuk ke akun pengguna.

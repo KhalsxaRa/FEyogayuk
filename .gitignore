@@ -3,3 +3,4 @@ dist
 .env
 vite.config.js
 .vercel
+.env*

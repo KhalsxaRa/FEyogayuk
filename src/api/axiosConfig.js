@@ -3,7 +3,7 @@ import axios from 'axios';
 // Ganti URL sesuai dengan base URL API backend Anda
 const api = axios.create({
   baseURL: import.meta.env.vite_BASE_URL ,
-  timeout: 10000,
+  timeout: 3000,
 });
 
 
